@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/helper.css">
+    <link rel="stylesheet" href="/assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css//toast.css">
+    <link rel="stylesheet" href="/plugin/fontawesome/css/all.css">
+    <title>Trang chủ </title>
+</head>
+
+<body>
+    <style>
+        .voice-btn.recognizing .action__icon-on {
+            display: block;
+        }
+
+        .voice-btn.recognizing .action__icon-off {
+            display: none;
+        }
+    </style>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__topbar">
+            <div class="container p-relative d-flex space-between align-center">
+                <p class="h5">Miễn phí ship toàn quốc</p>
+                <a class="h5 login-btn p-absolute" href="index.php?page=login">ĐĂNG NHẬP</a>
+
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__container d-grid middle-left">
+                    <!-- menu button -->
+                    <div class="header__btn md-none d-flex align-center">
+                        <div class="navbar__icons">
+                            <div class="navbar__icon"></div>
+                        </div>
+                    </div>
+                    <div class="header__logo d-flex justify-center align-center">
+                        <a href="index.php" class="d-inline-block">
+                            <img class="d-block w-50 svg__icon" src="/assets/images/logo-rosa.png" alt="Logo" />
+                        </a>
+                    </div>
+                    <nav class="header__nav space-between d-flex">
+                        <ul class="nav__list md-flex">
+                            <li class="nav__item md-none">
+                                <a href="#" class="nav__anchor" style="content: ''"></a>
+                            </li>
+                            <li class="nav__item nav__items h7">
+                                <span
+                                    class=" nav__anchor p-relative h7 d-flex align-center space-between w-100 cursor-pointer"
+                                    href="#">
+                                    Cửa hàng
+                                    <img class="md-none svg__icon" src="" alt="next" />
+
+                                    <img class="d-none md-block svg__icon " src="/assets/images/chevron-down-solid.svg"
+                                        alt="back" style="margin-left: 8px" />
+                                </span>
+                                <ul class="header__subnav p-absolute">
+                                    <li class="nav__item md-none h5">
+                                        <span class="nav__anchor cursor-pointer d-flex align-center"
+                                            style="content: ''">
+                                            <img class="md-none svg__icon text-color-white" src="/assets/images/chevron-down-solid.svg"
+                                                alt="" style="margin-right: 8px" />
+                                            Cửa hàng
+                                        </span>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Tất cả sản phẩm
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Nước hoa nam
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Nước hoa nữ
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Nước hoa chiết
+                                        </a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Nước hoa unisex
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav__item nav__items h7">
+                                <span
+                                    class="nav__anchor p-relative h7 d-flex align-center space-between w-100 cursor-pointer"
+                                    href="#">
+                                    Thương hiệu
+                                    <img class="md-none svg__icon" src="./assets/images/icon/icon-nextlink.svg"
+                                        alt="next" />
+                                    <img class="d-none md-block svg__icon" src="/assets/images/chevron-down-solid.svg"
+                                        alt="back" style="margin-left: 8px" />
+                                </span>
+                                <ul class="header__subnav p-absolute">
+                                    <li class="nav__item md-none h5">
+                                        <span class="nav__anchor cursor-pointer d-flex align-center"
+                                            style="content: ''">
+                                            <img class="md-none svg__icon" src="/assets/images/chevron-down-solid.svg"
+                                                alt="" style="margin-right: 8px" />
+                                            Thương hiệu
+                                        </span>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Dior
+                                        </a>
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Louis Vuitton
+                                        </a>
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Gucci
+                                        </a>
+                                        <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                            Chanel
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__anchor h7 d-flex align-center space-between" href="gioithieu.html">
+                                    Giới thiệu
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__anchor h7 d-flex align-center space-between" href="blog.html">
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__anchor h7 d-flex align-center space-between" href="#">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="flex-1"></div>
+                    </nav>
+                    <div class="header__action d-flex align-center">
+                        <div class="header__action--item d-flex align-center p-relative">
+                            <form action="index.php?page=search" method="POST" class="d-flex align-center"
+                                id="search-box">
+                                <input type="text" placeholder="Tìm kiếm sản phẩm ..." id="input-search" name="keyword"
+                                    class="search__input" required>
+                                <button type="submit" name="search"
+                                    class="header__action--link search-btn p-absolute d-inline-block">
+                                    <img class=" icon-whiteaction__icon svg__icon d-block"
+                                        src="/assets/images/magnifying-glass-solid.svg" alt="search" />
+                                </button>
+                                <button type="button" class="header__action--link voice-btn p-absolute d-inline-block"
+                                    id="search-btn" onclick="voiceInput();">
+                                    <img class="action__icon action__icon-off svg__icon d-block"
+                                        src="/assets/images/magnifying-glass-solid.svg" alt="search" />
+                                    <img class="action__icon action__icon-on svg__icon d-none"
+                                        src="./assets/images/icon/mic-on.png" alt="search" />
+                                </button>
+                            </form>
+                        </div>
+                        <div class="header__action--item align-center d-none md-flex">
+                            <a class="header__action--link d-inline-block" href="#">
+                                <img class="action__icon svg__icon d-block" src="/assets/images/user-regular.svg"
+                                    alt="person" />
+                            </a>
+                        </div>
+                        <div class="header__action--item d-flex align-center">
+                            <a class="header__action--link d-inline-block" href="index.php?page=cart">
+                                <div class="icon-cart d-flex align-center justify-center p-relative">
+                                    <img class="icon-white action__icon svg__icon d-block"
+                                        src="/assets/images/cart-shopping-solid.svg" alt="cart">
+                                    <span class="cart-count p-absolute d-flex align-center justify-center h6">
+                                        6
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav-overlay"></div>
+        </div>
+    </header>
+
+    <!-- DANH MỤC  -->
+    <section class="collage pd-top">
+        <div class="container">
+            <h2 class="collage__heading heading-3">Danh mục</h2>
+            <div class="collage__items d-grid">
+                <div class="collage__item d-flex flex-column h-100 ">
+                    <div class="collage__image h-100">
+                        <img class="w-100 h-100 d-block object-fit-cover flex-1" src="/assets/images/danhmuc1.png"
+                            alt="image banner" />
+                    </div>
+                    <div class="collage__container">
+                        <div class="collage__content d-flex">
+                            <a class="align-center" href="#">
+                                Nước hoa nữ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collage__item d-flex flex-column h-100 ">
+                    <div class="collage__image h-100">
+                        <img class="w-100 h-100 d-block object-fit-cover flex-1" src="/assets/images/danhmuc2.png"
+                            alt="image banner" />
+                    </div>
+                    <div class="collage__container">
+                        <div class="collage__content d-flex">
+                            <a class="align-center" href="#">
+                                Nước hoa unisex
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collage__item d-flex flex-column h-100 ">
+                    <div class="collage__image h-100">
+                        <img class="w-100 h-100 d-block object-fit-cover flex-1" src="/assets/images/danhmuc3.png"
+                            alt="image banner" />
+                    </div>
+                    <div class="collage__container">
+                        <div class="collage__content d-flex">
+                            <a class="align-center" href="#">
+                                Nước hoa chiết
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="collage__item d-flex flex-column h-100 ">
+                    <div class="collage__image h-100">
+                        <img class="w-100 h-100 d-block object-fit-cover flex-1" src="/assets/images/danhmuc4.png"
+                            alt="image banner" />
+                    </div>
+                    <div class="collage__container">
+                        <div class="collage__content d-flex">
+                            <a class="align-center" href="#">
+                                Nước hoa nam
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SẢN PHẨM NỔI BẬT  -->
+    <div class="product-list">
+        <div class="container pd-section">
+            <div class="row">
+                <div class="col">
+                    <div class="product__title">
+                        <h2 class="h2">Sản phẩm nổi bật</h2>
+                        <p class="h9">Một số sản phẩm mới được cập nhật tại cửa hàng</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img4.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img1.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img2.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img3.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img4.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img1.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img2.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" style="--w: 6; --w-md: 3">
+                    <div class="product__card d-flex flex-column">
+                        <div class="product__image p-relative">
+                            <a href="#">
+                                <img class="w-100 h-100 object-fit-cover" src="/assets/images/product-img3.png"
+                                    alt="product image" />
+                            </a>
+                            <span class="product__sale h6 p-absolute"> -
+                                10%
+                            </span>
+                        </div>
+                        <div class="product__info">
+                            <a href="#">
+                                <h3 class="product__name h5">
+                                    Diesel Fuel For Life Pour Homme
+                                </h3>
+                            </a>
+                            <span class="review-star-list d-flex">
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                                <div class="rating-star"></div>
+                            </span>
+                            <a href="#">
+                                <div class="product__price align-center">
+
+                                    <del class="product__price--old h5">4.000.000đ</del>
+
+                                    <span class="product__price--new h4">3.680.000đ</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="text-center pd-top">
+                        <a class="btn btn__view--all btn__outline" href="index.php?page=product_category">Xem tất cả</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TIN TỨC NỔI BẬT  -->
+<!-- start customer feedback -->
+<section class="customer pd-section">
+    <div class="container">
+        <div class="row">
+            <div class="col section__heading text-center">
+                <h2 class="h2">Tin tức nổi bật</h2>
+            </div>
+        </div>
+        <div class="customer-feedback">
+            <ul class="customer-feedback__items d-flex w-100" tabindex="0">
+                    <li class="customer-feedback__item d-flex justify-center align-center" id="#">
+                        <div class="customer-feedback__image w-100">
+                            <a href="#"><img class="image-news w-100 h-100 d-block object-fit-cover" src="/assets/images/news-1.png"></a>
+                        </div>
+                        <div class="customer-feedback__content w-100 h-100 d-flex text-center">
+                            NƯỚC HOA NICHE – LỐI ĐI RIÊNG CỦA BẠN
+                        </div>
+                        <div class="customer-feedback__content w-100 h-100 d-flex">
+                            <span class="customer-feedback__date d-flex align-center">
+                                <img  class="article-icon" src="/assets/images/ci_calendar-days.png" alt="">
+                                2023-10-14
+                            </span>         
+                            <span class="customer-feedback__name d-flex align-center"> 
+                                <img  class="article-icon" src="/assets/images/gridicons_user.png" alt=""> 
+                                ANH ANH
+                            </span>
+                            <p class="customer-feedback__text h4 ">Nước hoa là một mỹ phẩm đặc biệt nhằm làm tăng sự quyễn rũ, lôi cuốn, quý phái cho người sử dụng, kh...</p>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        <div class="customer-feedback">
+            <ul class="customer-feedback__items d-flex w-100" tabindex="0">
+                    <li class="customer-feedback__item d-flex justify-center align-center" id="#">
+                        <div class="customer-feedback__image w-100">
+                            <a href="#"><img class="image-news w-100 h-100 d-block object-fit-cover" src="/assets/images/news-1.png"></a>
+                        </div>
+                        <div class="customer-feedback__content w-100 h-100 d-flex text-center">
+                            NƯỚC HOA NICHE – LỐI ĐI RIÊNG CỦA BẠN
+                        </div>
+                        <div class="customer-feedback__content w-100 h-100 d-flex">
+                            <span class="customer-feedback__date d-flex align-center">
+                                <img  class="article-icon" src="/assets/images/ci_calendar-days.png" alt="">
+                                2023-10-14
+                            </span>         
+                            <span class="customer-feedback__name d-flex align-center"> 
+                                <img  class="article-icon" src="/assets/images/gridicons_user.png" alt=""> 
+                                ANH ANH
+                            </span>
+                            <p class="customer-feedback__text h4 ">Nước hoa là một mỹ phẩm đặc biệt nhằm làm tăng sự quyễn rũ, lôi cuốn, quý phái cho người sử dụng, kh...</p>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+        <div class="customer-feedback">
+            <ul class="customer-feedback__items d-flex w-100" tabindex="0">
+                    <li class="customer-feedback__item d-flex justify-center align-center" id="#">
+                        <div class="customer-feedback__image w-100">
+                            <a href="#"><img class="image-news w-100 h-100 d-block object-fit-cover" src="/assets/images/news-1.png"></a>
+                        </div>
+                        <div class="customer-feedback__content w-100 h-100 d-flex text-center">
+                            NƯỚC HOA NICHE – LỐI ĐI RIÊNG CỦA BẠN
+                        </div>
+                        <div class="customer-feedback__content w-100 h-100 d-flex">
+                            <span class="customer-feedback__date d-flex align-center">
+                                <img  class="article-icon" src="/assets/images/ci_calendar-days.png" alt="">
+                                2023-10-14
+                            </span>         
+                            <span class="customer-feedback__name d-flex align-center"> 
+                                <img  class="article-icon" src="/assets/images/gridicons_user.png" alt=""> 
+                                ANH ANH
+                            </span>
+                            <p class="customer-feedback__text h4 ">Nước hoa là một mỹ phẩm đặc biệt nhằm làm tăng sự quyễn rũ, lôi cuốn, quý phái cho người sử dụng, kh...</p>
+                        </div>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- end customer feedback -->
+</body>
+
+</html>
